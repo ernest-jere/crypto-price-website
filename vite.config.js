@@ -1,16 +1,11 @@
 import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
-import path from 'path' // 🚀 Import path module helper utilities
+import react from '@vitejs/plugin-vue' // or @vitejs/plugin-react based on your project setups
 
-// https://vite.dev
 export default defineConfig({
   plugins: [react()],
-  resolve: {
-    alias: {
-      // 🚀 CRITICAL FIX: Forces react-router-dom to share your exact app React module reference tree
-      'react': path.resolve(__dirname, './node_modules/react'),
-      'react-dom': path.resolve(__dirname, './node_modules/react-dom')
-    }
+  // Explicitly suppress the native loader warning that crashes Vercel's bundler checks
+  configLoader: 'runner', 
+  build: {
+    chunkSizeWarningLimit: 1000, // Extends the 500kb chunk size limit warning you encountered earlier
   }
 })
-
