@@ -142,7 +142,6 @@ export const CoinDetail = () => {
                                 color: "#fff",
                             }}/>
 
-                            {/* FIX: Wrapped string 'price' in quotation marks to prevent undefined variable crash */}
                             <Line 
                                 dataKey="price"
                                 type="monotone"
