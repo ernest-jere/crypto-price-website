@@ -6,6 +6,6 @@ export default defineConfig({
   // Explicitly suppress the native loader warning that crashes Vercel's bundler checks
   configLoader: 'runner', 
   build: {
-    chunkSizeWarningLimit: 1000, // Extends the 500kb chunk size limit warning you encountered earlier
+    chunkSizeWarningLimit: 1000, // Ex tends the 500kb chunk size limit warning you encountered earlier
   }
 })
