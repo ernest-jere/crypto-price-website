@@ -2,7 +2,7 @@
 
 A modern, real-time cryptocurrency price tracker built with **React**, **Vite**, and **Recharts**. The application fetches live market statistics and historical 7-day performance data directly from the **CoinGecko API**.
 
-👉 **[Live Demo URL](https://vercel.app)**
+👉 **[Live Demo URL](https://crypto-price-website-six.vercel.app/)**
 
 ## 🚀 Features
 
