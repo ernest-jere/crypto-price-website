@@ -171,6 +171,10 @@ export const CoinDetail = () => {
                     </div>
                 </div>
             </div>
+             <footer className="footer">
+                <p>© 2024 Crypto Prices. All rights reserved.</p>
+                <p>data provided by CoinGecko API . Updated every 30 seconds.</p>
+            </footer>
         </div>
     );
 };

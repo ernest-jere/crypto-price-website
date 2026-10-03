@@ -11,7 +11,8 @@ export const Home = () => {
     const [searchQuery, setSearchQuery] = useState(""); // 🚀 Fixed: Corrected typo from 'querry' to 'query'
 
     useEffect(() => {
-        fetchCryptoData();
+        const interval = setInterval(fetchCryptoData, 30000); // Refresh every 30 seconds
+        return () => clearInterval(interval); // Cleanup on unmount
     }, []);
 
     useEffect(() => {

@@ -1,11 +1,11 @@
 import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-vue' // or @vitejs/plugin-react based on your project setups
+import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  // Explicitly suppress the native loader warning that crashes Vercel's bundler checks
   configLoader: 'runner', 
   build: {
-    chunkSizeWarningLimit: 1000, // Ex tends the 500kb chunk size limit warning you encountered earlier
+    chunkSizeWarningLimit: 1000,
   }
 })
+

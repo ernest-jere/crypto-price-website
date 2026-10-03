@@ -12,11 +12,11 @@
     "lint": "oxlint",
     "preview": "vite preview"
   },
-  "dependencies": {
-    "react": "^19.2.8",
-    "react-dom": "^19.2.8",
-    "react-router": "^7.18.4",
-    "recharts": "^3.10.1"
+    "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.28.0",
+    "recharts": "^2.15.0"
   },
   "devDependencies": {
     "@types/react": "^19.2.18",
